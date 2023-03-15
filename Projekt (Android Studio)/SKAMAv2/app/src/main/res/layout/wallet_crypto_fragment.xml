@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <RelativeLayout
+        android:id="@+id/wallet_crypto_addr_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/wallet_crypto_addr_tv_id"
+            android:layout_marginRight="4dp"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/wallet_address_crypto" />
+
+        <EditText
+            android:id="@+id/wallet_crypto_addr_et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/wallet_crypto_addr_tv_id"
+            android:layout_toLeftOf="@+id/wallet_crypto_from_list_btn_id"
+            android:hint="@string/wallet_address_hint_crypto" />
+
+        <Button
+            android:id="@+id/wallet_crypto_from_list_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/wallet_from_list_btn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wallet_crypto_type_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/wallet_crypto_addr_layout_id">
+
+        <TextView
+            android:id="@+id/wallet_crypto_type_tv_id"
+            android:layout_marginRight="4dp"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wallet_type_crypto"/>
+
+        <Spinner
+            android:id="@+id/wallet_crypto_type_spinner_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/wallet_type_prompt_crypto"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/wallet_crypto_check_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wallet_crypto_type_layout_id"
+        android:text="@string/wallet_check_btn_crypto" />
+
+    <View
+        android:id="@+id/wallet_crypto_divider_id"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/wallet_crypto_check_btn_id"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/wallet_crypto_infoprint_tv_id"
+        android:textAppearance="@style/HeadlineEditSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wallet_crypto_divider_id"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:text="@string/wallet_info_title_crypto" />
+
+    <LinearLayout
+        android:id="@+id/wallet_crypto_infoaddr_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/wallet_crypto_infoprint_tv_id" >
+
+        <TextView
+            android:id="@+id/wallet_crypto_infoaddr_tv1_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_marginRight="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/wallet_info_address_crypto"/>
+
+        <TextView
+            android:id="@+id/wallet_crypto_infoaddr_tv2_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wallet_crypto_infobalance_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/wallet_crypto_infoaddr_layout_id" >
+
+        <TextView
+            android:id="@+id/wallet_crypto_infobalance_tv1_id"
+            android:layout_marginRight="4dp"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/wallet_info_actual_amount_crypto"/>
+
+        <TextView
+            android:id="@+id/wallet_crypto_infobalance_tv2_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wallet_crypto_infocounttran_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/wallet_crypto_infobalance_layout_id" >
+
+        <TextView
+            android:id="@+id/wallet_crypto_infocounttran_tv1_id"
+            android:layout_marginRight="4dp"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/wallet_info_transaction_count_crypto"/>
+
+        <TextView
+            android:id="@+id/wallet_crypto_infocounttran_tv2_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wallet_crypto_infototalrecv_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/wallet_crypto_infocounttran_layout_id" >
+
+        <TextView
+            android:id="@+id/wallet_crypto_infototalrecv_tv1_id"
+            android:layout_marginRight="4dp"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/wallet_info_total_received_crypto"/>
+
+        <TextView
+            android:id="@+id/wallet_crypto_infototalrecv_tv2_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wallet_crypto_infototalsent_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/wallet_crypto_infototalrecv_layout_id" >
+
+        <TextView
+            android:id="@+id/wallet_crypto_infototalsent_tv1_id"
+            android:layout_marginRight="4dp"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/wallet_info_total_sent_crypto"/>
+
+        <TextView
+            android:id="@+id/wallet_crypto_infototalsent_tv2_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wallet_crypto_infomore_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/wallet_crypto_infototalsent_layout_id" >
+
+        <TextView
+            android:id="@+id/wallet_crypto_infomore_tv1_id"
+            android:layout_marginRight="4dp"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/wallet_info_more_crypto"/>
+
+        <TextView
+            android:id="@+id/wallet_crypto_infomore_tv2_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/wallet_crypto_add_addr_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/wallet_info_add_wallet_crypto"
+        android:layout_below="@+id/wallet_crypto_infomore_layout_id" />
+</RelativeLayout>

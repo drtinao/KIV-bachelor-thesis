@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_graph_graph_history"
+        android:icon="@drawable/ic_graph_graph_history"
+        android:title="@string/add_history_menu"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic_add_graph_history"
+        android:icon="@drawable/ic_add_history"
+        android:title="@string/graph_history_menu"
+        app:showAsAction="always" />
+</menu>

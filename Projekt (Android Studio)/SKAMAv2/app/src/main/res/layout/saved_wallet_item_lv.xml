@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/saved_wallet_item_name_tv_id"
+        android:text="name_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textAppearance="@style/DescBox" />
+
+    <TextView
+        android:id="@+id/saved_wallet_item_addr_tv_id"
+        android:text="address_place"
+        android:focusable="false"
+        android:textAppearance="@style/DescBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saved_wallet_item_name_tv_id" />
+
+    <TextView
+        android:id="@+id/saved_wallet_item_datetime_tv_id"
+        android:text="datetime_place"
+        android:focusable="false"
+        android:textAppearance="@style/DescBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saved_wallet_item_addr_tv_id" />
+
+    <Button
+        android:id="@+id/saved_wallet_item_remove_id"
+        android:text="@string/saved_wallet_remove_btn"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/saved_wallet_item_addr_tv_id" />
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialog_history_crypto_type_lay_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true" >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/dialog_history_crypto_buy_rb_id"
+                android:textAppearance="@style/DescBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_crypto_dialog_type_buy_radio" />
+
+            <RadioButton
+                android:id="@+id/dialog_history_crypto_sell_rb_id"
+                android:textAppearance="@style/DescBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_crypto_dialog_type_sell_radio" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_history_crypto_amount_lay_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dialog_history_crypto_type_lay_id">
+
+        <TextView
+            android:id="@+id/dialog_history_crypto_amount_tv_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/history_crypto_dialog_amount_tv" />
+
+        <EditText
+            android:id="@+id/dialog_history_crypto_amount_et_id"
+            android:maxLength="7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxEms="10"
+            android:inputType="numberDecimal"
+            android:hint="@string/history_crypto_dialog_amount_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_history_crypto_price_lay_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dialog_history_crypto_amount_lay_id">
+
+        <TextView
+            android:id="@+id/dialog_history_crypto_price_tv_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/history_crypto_dialog_price_tv" />
+
+        <EditText
+            android:id="@+id/dialog_history_crypto_price_et_id"
+            android:maxLength="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="10"
+            android:inputType="numberDecimal"
+            android:hint="@string/history_crypto_dialog_price_hint" />
+
+        <TextView
+            android:id="@+id/dialog_history_crypto_currency_tv_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxEms="10"
+            android:text="XXX" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_history_crypto_date_lay_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dialog_history_crypto_price_lay_id">
+
+        <TextView
+            android:id="@+id/dialog_history_crypto_date_tv_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/history_crypto_dialog_date_tv" />
+
+        <EditText
+            android:id="@+id/dialog_history_crypto_date_et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxEms="10"
+            android:clickable="true"
+            android:inputType="none"
+            android:focusable="false"
+            android:hint="@string/history_crypto_dialog_date_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_history_crypto_time_lay_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dialog_history_crypto_date_lay_id">
+
+        <TextView
+            android:id="@+id/dialog_history_crypto_time_tv_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/history_crypto_dialog_time_tv" />
+
+        <EditText
+            android:id="@+id/dialog_history_crypto_time_et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxEms="10"
+            android:clickable="true"
+            android:inputType="none"
+            android:focusable="false"
+            android:hint="@string/history_crypto_dialog_time_hint" />
+    </LinearLayout>
+</RelativeLayout>

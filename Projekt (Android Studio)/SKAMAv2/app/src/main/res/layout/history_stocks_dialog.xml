@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/history_stocks_dialog_chart_id"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:id="@+id/history_stocks_dialog_symbol_tv"
+        android:textAppearance="@style/DescBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_crypto_dialog_symbol_tv" />
+
+    <TextView
+        android:id="@+id/history_stocks_dialog_count_tv"
+        android:textAppearance="@style/DescBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_crypto_dialog_count_tv" />
+
+    <TextView
+        android:id="@+id/history_stocks_dialog_invested_tv"
+        android:textAppearance="@style/DescBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history_crypto_dialog_invested_tv" />
+</LinearLayout>

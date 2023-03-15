@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:id="@+id/crypto_detail_frag2_crypto_id_hidden_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/crypto_detail_frag2_sel_date_title_id"
+        android:textAppearance="@style/HeadlineEditSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pick_date_title_crypto" />
+
+    <LinearLayout
+        android:id="@+id/crypto_detail_frag2_sel_date_from_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/crypto_detail_frag2_sel_date_title_id">
+
+        <TextView
+            android:id="@+id/crypto_detail_frag2_sel_date_from_tv_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/date_from_crypto" />
+
+        <EditText
+            android:id="@+id/crypto_detail_frag2_sel_date_from_et_id"
+            android:ems="10"
+            android:hint="@string/date_hint_crypto"
+            android:clickable="true"
+            android:inputType="none"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/crypto_detail_frag2_sel_date_to_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/crypto_detail_frag2_sel_date_from_layout_id">
+
+        <TextView
+            android:id="@+id/crypto_detail_frag2_sel_date_to_tv_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/date_to_crypto" />
+
+        <EditText
+            android:id="@+id/crypto_detail_frag2_sel_date_to_et_id"
+            android:ems="10"
+            android:hint="@string/date_hint_crypto"
+            android:clickable="true"
+            android:inputType="none"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/crypto_detail_frag2_submit_date_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crypto_detail_frag2_sel_date_to_layout_id"
+        android:text="@string/show_progression_btn_crypto" />
+
+    <View
+        android:id="@+id/crypto_detail_frag2_divider_id"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/crypto_detail_frag2_submit_date_btn_id"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/crypto_detail_frag2_chart_title_id"
+        android:textAppearance="@style/HeadlineEditSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/crypto_detail_frag2_divider_id"
+        android:text="@string/time_progression_select_crypto" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/crypto_detail_frag2_chart_id"
+        android:layout_below="@id/crypto_detail_frag2_chart_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

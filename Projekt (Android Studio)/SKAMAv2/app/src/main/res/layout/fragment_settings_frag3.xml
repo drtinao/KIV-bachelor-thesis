@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:id="@+id/settings_stocks_news_pref_title_id"
+        android:textAppearance="@style/HeadlineEditSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/preferred_news_title_settings" />
+
+    <LinearLayout
+        android:id="@+id/settings_stocks_news_pref_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/settings_stocks_news_pref_title_id">
+
+        <TextView
+            android:id="@+id/settings_stocks_news_pref_tv_id"
+            android:layout_marginRight="4dp"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/choice_text_settings" />
+
+        <Spinner
+            android:id="@+id/settings_stocks_news_pref_spinner_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:prompt="@string/preferred_prompt_settings" />
+    </LinearLayout>
+</RelativeLayout>

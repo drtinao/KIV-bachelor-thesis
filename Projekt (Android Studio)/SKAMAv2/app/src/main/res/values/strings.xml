@@ -1,0 +1,627 @@
+<resources>
+    <string name="app_name">SKAMA</string>
+    <string name="drawer_nav_open">Open menu</string>
+    <string name="drawer_nav_close">Close menu</string>
+    <string name="sharedpref_name">preferences</string>
+    <string name="sharedpref_item_separator">;;;</string>
+    <string name="sharedpref_crypto_alerts">crypto_alerts</string>
+    <string name="sharedpref_stocks_alerts">stocks_alerts</string>
+    <string name="sharedpref_crypto_owned_list">owned_crypto_list</string>
+    <string name="sharedpref_stocks_owned_list">owned_stock_list</string>
+    <string name="sharedpref_crypto_wallets_list">saved_wallets_list</string>
+    <string name="sharedpref_first_run_flag">first_run</string>
+
+    <string name="sharedpref_transaction_type_buy">BUY</string>
+    <string name="sharedpref_transaction_type_sell">SELL</string>
+    <string name="sharedpref_alert_type_below">BELOW</string>
+    <string name="sharedpref_alert_type_above">ABOVE</string>
+
+    <!-- strings regarding to generic alert - no internet connection - START -->
+    <string name="no_internet_alert_title">Upozornění</string>
+    <string name="no_internet_alert_mes">Není k dispozici internetové připojení!\nPřipojte se a akci opakujte.</string>
+    <string name="no_internet_alert_ok">OK</string>
+    <!-- strings regarding to generic alert - no internet connection - END -->
+
+    <!-- strings regarding to menu_nav.xml - START -->
+    <string name="crypto_menu">Kryptoměny</string>
+    <string name="actual_value_crypto_menu">Aktuální stav</string>
+    <string name="news_crypto_menu">Zprávy</string>
+    <string name="history_crypto_menu">Historie nákupů</string>
+    <string name="alert_crypto_menu">Upozornění</string>
+    <string name="wallet_crypto_menu">Stav peněženky</string>
+    <string name="converter_crypto_menu">Převodník</string>
+    <string name="stocks_menu">Akcie</string>
+    <string name="actual_value_stocks_menu">Aktuální stav</string>
+    <string name="news_stocks_menu">Zprávy</string>
+    <string name="history_stocks_menu">Historie nákupů</string>
+    <string name="other_menu">Ostatní</string>
+    <string name="other_settings_menu">Nastavení</string>
+    <string name="other_about_menu">O aplikaci</string>
+    <!-- strings regarding to menu_nav.xml - END -->
+
+    <!-- strings regarding to fragment_about.xml - START -->
+    <string name="about_title">Obecné informace</string>
+    <string name="about_text">Tato aplikace vznikla v rámci bakalářské práce s názvem \"Správa kryptoměn a akcií v mobilní aplikaci\".\n</string>
+    <string name="about_creator_title">Kontakt na autora</string>
+    <string name="about_creator_text">Jméno: Ondřej Drtina\nE-mail: drtinao@students.zcu.cz\n</string>
+    <string name="about_libraries_title">Použité knihovny třetích stran</string>
+    <string name="about_libraries_text">Ke zjištění historických dat akcií jsem použil nástroj \"YahooFinanceAPI\", jež je dostupný pod MIT licencí na GitHubu: https://github.com/sstrickx/yahoofinance-api.\n\nPro získávání a zpracování textu zpráv je použita knihovna \"jsoup\" - dostupná z jsoup.org pod MIT licencí.\n\nZískávání obrázků ke zprávám je zajištěno knihovnou \"Picasso\" dostupnou pod Apache licencí, více informací lze nalézt na: https://square.github.io/picasso.\n\nGrafy v aplikaci jsou vytvářeny nástrojem \"MPAndroidChart\" s licencí Apache - GitHub: https://github.com/PhilJay/MPAndroidChart</string>
+    <string name="about_materials_title">\nPoužité obrázky třetích stran</string>
+    <string name="about_materials_text">Ikona aplikace byla vytvořena uživatelem <b>Eucalyp</b> z webu <b>www.flaticon.com</b>.\n\nIkony v navigačním panelu aplikace pocházejí z webu https://material.io a jsou distribuovány pod licencí Apache.\n</string>
+    <string name="about_mit_title">Text MIT licence</string>
+    <string name="about_mit_text">Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.\n\n
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.\n</string>
+    <string name="about_apache_title">Apache licence</string>
+    <string name="about_apache_text">Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</string>
+    <!-- strings regarding to fragment_about.xml - END -->
+
+    <!-- strings regarding to simulation_nav.xml - START -->
+    <string name="alert_simulation_menu">Přidat upozornění</string>
+    <string name="simulate_simulation_menu">Simulovat transakci</string>
+    <!-- strings regarding to simulation_nav.xml - END -->
+
+    <!-- strings regarding to history_nav.xml & graph_history_nav.xml - START -->
+    <string name="add_history_menu">Přidat kryptoměny</string>
+    <string name="graph_history_menu">Zobrazit graf</string>
+    <!-- strings regarding to history_nav.xml & graph_history_nav.xml - END -->
+
+    <!-- strings regarding to actual_value_stocks_fragment.xml - START -->
+    <string name="search_display_btn_stocks">zobrazit</string>
+    <string name="search_manual_title_stocks">Instrukce</string>
+    <string name="search_manual_first_part_stocks">Pro zobrazení cenového vývoje zadejte symbol požadované akcie do pole výše a klepněte na tlačítko s nápisem \"ZOBRAZIT\".\nSymboly akcií lze nalézt například na webu Yahoo Finance, ze kterého jsou data získávána. Seznam symbolů nejznámějších akciových firem je dostupný v seznamu níže.</string>
+    <string name="search_pick_website_stocks">přejít na Yahoo Finance</string>
+    <string name="search_pick_website_link_stocks">https://finance.yahoo.com/</string>
+    <string-array name="actual_value_famous_list_name_stocks">
+        <item>Apple Inc.</item>
+        <item>Microsoft Corporation</item>
+        <item>Amazon</item>
+        <item>Facebook Inc.</item>
+        <item>Alibaba Group</item>
+        <item>Bank of America</item>
+        <item>Wal-Mart Stores Inc.</item>
+        <item>Visa Inc.</item>
+        <item>Chevron Corporation</item>
+        <item>UnitedHealth Group Inc.</item>
+        <item>Pfizer Inc.</item>
+        <item>China Mobile</item>
+        <item>Home Depot</item>
+        <item>Intel</item>
+        <item>Advanced Micro Devices Inc.</item>
+        <item>Verizon Communications</item>
+        <item>Oracle Corporation</item>
+        <item>Citigroup Inc.</item>
+        <item>NVIDIA Corporation</item>
+        <item>Tesla, Inc.</item>
+        <item>Spotify Technology S.A.</item>
+        <item>General Motors Company</item>
+    </string-array>
+
+    <string-array name="actual_value_famous_list_sym_stocks">
+        <item>AAPL</item>
+        <item>MSFT</item>
+        <item>AMZN</item>
+        <item>FB</item>
+        <item>BABA</item>
+        <item>BAC</item>
+        <item>WMT</item>
+        <item>V</item>
+        <item>CVX</item>
+        <item>UNH</item>
+        <item>PFE</item>
+        <item>CHL</item>
+        <item>HD</item>
+        <item>INTL</item>
+        <item>AMD</item>
+        <item>VZ</item>
+        <item>ORCL</item>
+        <item>C</item>
+        <item>NVDA</item>
+        <item>TSLA</item>
+        <item>SPOT</item>
+        <item>GM</item>
+    </string-array>
+    <!-- strings regarding to actual_value_stocks_fragment.xml - END -->
+
+    <!-- strings regarding to actual_value_stocks_detail_frag_main.xml & ActualValueStocksDetailFrag class - START -->
+    <string name="first_tab_title_stocks">aktuální</string>
+    <string name="second_tab_title_stocks">historie</string>
+    <string name="newly_added_stock">Akcie firmy byly přidány mezi sledované akcie.</string>
+    <string name="already_added_stock">Akcie dané firmy již byly přidány, nelze přidat!</string>
+    <string name="newly_added_stock_alert">Upozornění pro akcie dané firmy bylo úspěšně přidáno.</string>
+    <string name="already_added_stock_alert">Upozornění pro danou firmu již bylo přidáno, nelze přidat!</string>
+    <!-- strings regarding to actual_value_stocks_detail_frag_main.xml & ActualValueStocksDetailFrag class - END -->
+
+    <!-- strings regarding to actual_value_stocks_detail_frag1.xml - START -->
+    <string name="basic_info_title_stocks">Základní informace</string>
+    <string name="actual_value_stocks">aktuální hodnota: </string>
+    <string name="add_btn_stock">Přidat mezi sledované akcie</string>
+    <string name="time_progression_stocks">Vývoj ceny během posledního měsíce</string>
+    <!-- strings regarding to actual_value_stocks_detail_frag1.xml - END -->
+
+    <!-- strings regarding to actual_value_stocks_detail_frag2.xml - START -->
+    <string name="pick_date_title_stocks">Vyberte datum</string>
+    <string name="date_from_stocks">od: </string>
+    <string name="date_to_stocks">do: </string>
+    <string name="date_hint_stocks">zvolte datum</string>
+    <string name="show_progression_btn_stocks">Zobrazit vývoj!</string>
+    <string name="time_progression_select_stocks">Vývoj ceny ve zvoleném čas. období</string>
+    <!-- strings regarding to actual_value_stocks_detail_frag2.xml - END -->
+
+    <!-- strings regarding to actual_value_crypto_detail_frag_main.xml & FragmentActualValueCrypto class & ActualValueCryptoDetailFrag class & ActualValueCryptoDetailFragMain class & HistoryCryptoDetailFrag class & CryptoDetailAdapter class - START -->
+    <string name="first_tab_title_crypto">aktuální</string>
+    <string name="second_tab_title_crypto">historie</string>
+    <string name="newly_added_crypto">Kryptoměna byla přidána mezi sledované kryptoměny.</string>
+    <string name="already_added_crypto">Kryptoměna již byla přidána, nelze přidat!</string>
+    <string name="newly_added_crypto_alert">Upozornění pro danou kryptoměnu bylo úspěšně přidáno.</string>
+    <string name="already_added_crypto_alert">Upozornění pro danou kryptoměnu již bylo přidáno, nelze přidat!</string>
+    <string name="actual_value_crypto_detail_sim_title">Přidat upozornění</string>
+    <string name="actual_value_crypto_detail_sim_message">Níže vyplňte údaje související s upozorněním na změnu ceny jednoho kusu kryptoměny. Můžete být upozorněni, když hodnota kusu kryptoměny klesne pod určitou částku, či pokud se navýší nad určitou částku.</string>
+    <string name="actual_value_crypto_detail_sim_add">Přidat upozornění</string>
+    <string name="actual_value_crypto_detail_sim_cancel">Zrušit</string>
+    <string name="actual_value_crypto_detail_sim_not_added">Upozornění na změnu ceny nebylo přidáno.</string>
+    <string name="actual_value_crypto_detail_dialog_title">Upozornění</string>
+    <string name="actual_value_crypto_detail_dialog_specify_start_date_mes">Je potřeba specifikovat počáteční datum!</string>
+    <string name="actual_value_crypto_detail_dialog_specify_end_date_mes">Je potřeba specifikovat konečný datum!</string>
+    <string name="actual_value_crypto_detail_dialog_end_before_start_mes">Datum uvedené v poli \"do\" nemůže nastat před datem uvedeném v poli \"od\"!</string>
+    <string name="actual_value_crypto_detail_dialog_from_after_actual_mes">Datum uvedené v poli \"od\" nemůže nastat po aktuální datu!</string>
+    <string name="actual_value_crypto_detail_dialog_to_after_actual_mes">Datum uvedené v poli \"do\" nemůže nastat po aktuální datu!</string>
+    <string name="actual_value_crypto_detail_dialog_4_years_mes">Nelze zobrazit 4 (či více) letou historii - získání dat ze zdroje by trvalo velmi dlouho. Zvolte prosím kratší časový interval.</string>
+    <string name="actual_value_crypto_detail_dialog_ok">OK</string>
+
+    <string name="actual_value_crypto_detail_sharedpref_tab">selected_tab_num</string>
+    <string name="actual_value_crypto_detail_sharedpref_id">selected_crypto_id</string>
+    <string name="actual_value_crypto_detail_sharedpref_name">selected_crypto_name</string>
+    <string name="actual_value_crypto_detail_sharedpref_symbol">selected_crypto_symbol</string>
+
+
+    <string name="actual_value_crypto_detail_dialog_sim_buy_1">K datu</string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_2"> by byl v čase </string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_3"> učiněn nákup za </string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_4">.</string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_5">Poslední známá cena jednoho kusu kryptoměny pochází ze dne </string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_6">, čas </string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_7"> a činí </string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_8">V tento časový okamžik by kryptoměna byla zakoupena za celkovou částku </string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_9_gain">Nákup ve zvoleném časovém bodě by byl výdělečný a bylo by dosaženo zisku </string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_9_loss">Nákup ve zvoleném časovém bodě by byl prodělečný a v aktuální době by bylo možno danou kryptoměnu nakoupit o </string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_10_gain">.</string>
+    <string name="actual_value_crypto_detail_dialog_sim_buy_10_loss"> levněji.</string>
+
+    <string name="actual_value_crypto_detail_dialog_sim_sell_1">K datu</string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_2"> by byl v čase </string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_3"> učiněn prodej za </string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_4">.</string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_5">Poslední známá cena jednoho kusu kryptoměny pochází ze dne </string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_6">, čas </string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_7"> a činí </string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_8">V tento časový okamžik by kryptoměna byla prodána za celkovou částku </string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_9_gain">Prodej ve zvoleném časovém bodě by byl výdělečný a bylo by dosaženo zisku </string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_9_loss">Prodej ve zvoleném časovém bodě by byl prodělečný a v aktuální době by bylo možno danou kryptoměnu prodat o </string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_10_gain">.</string>
+    <string name="actual_value_crypto_detail_dialog_sim_sell_10_loss"> dráž.</string>
+
+    <string name="history_crypto_detail_title">Transakce:</string>
+    <!-- strings regarding to actual_value_crypto_detail_frag_main.xml & FragmentActualValueCrypto class & ActualValueCryptoDetailFrag class & ActualValueCryptoDetailFragMain class & HistoryCryptoDetailFrag class & CryptoDetailAdapter class - END -->
+
+    <!-- strings regarding to actual_value_crypto_detail_frag1.xml - START -->
+    <string name="basic_info_title_crypto">Základní informace</string>
+    <string name="actual_value_crypto">aktuální hodnota: </string>
+    <string name="add_btn_crypto">Přidat mezi sledované kryptoměny</string>
+    <string name="time_progression_crypto">Vývoj ceny během posledních 24h</string>
+    <!-- strings regarding to actual_value_crypto_detail_frag1.xml - END -->
+
+    <!-- strings regarding to actual_value_crypto_detail_frag2.xml - START -->
+    <string name="pick_date_title_crypto">Vyberte datum</string>
+    <string name="date_from_crypto">od: </string>
+    <string name="date_to_crypto">do: </string>
+    <string name="date_hint_crypto">zvolte datum</string>
+    <string name="show_progression_btn_crypto">Zobrazit vývoj!</string>
+    <string name="time_progression_select_crypto">Vývoj ceny ve zvoleném čas. období</string>
+    <!-- strings regarding to actual_value_crypto_detail_frag2.xml - END -->
+
+    <!-- strings regarding to actual_value_item.xml - START -->
+    <string name="time_graph_layout">čas: </string>
+    <string name="time_graph_placeholder_layout">xx.xx.xxxx xx:xx:xx</string>
+    <string name="price_graph_layout">cena: </string>
+    <string name="price_graph_placeholder_layout">xx.xx.xx xx:xx:xx</string>
+    <!-- strings regarding to actual_value_item.xml - START -->
+
+
+    <!-- strings regarding to converter_crypto_fragment.xml - START -->
+    <string name="converter_amount_in_crypto">vstupní částka: </string>
+    <string name="converter_amount_in_hint_crypto">zadejte částku pro převod</string>
+    <string name="converter_from_crypto">z: </string>
+    <string name="converter_select_hint_crypto">zvolte kryptoměnu</string>
+    <string name="converter_to_crypto">na: </string>
+    <string name="converter_amount_out_crypto">výstupní částka: </string>
+    <string name="converter_amount_out_hint_crypto">nejprve proveďte převod</string>
+    <string name="converter_perform_btn_crypto">Provést převod</string>
+    <string name="converter_search_hint_crypto">zadejte název či symbol</string>
+    <!-- strings regarding to converter_crypto_fragment.xml - END -->
+
+    <!-- strings used in more settings xmls - START -->
+    <string name="choice_text_settings">volba: </string>
+    <string name="preferred_news_title_settings">Preference zpráv</string>
+    <string name="preferred_prompt_settings">vyberte zdroj</string>
+    <!-- strings used in more settings xmls - END -->
+
+    <!-- strings regarding to fragment_settings_main.xml - START -->
+    <string name="first_tab_title_settings">obecné</string>
+    <string name="second_tab_title_settings">kryptoměny</string>
+    <string name="third_tab_title_settings">akcie</string>
+    <!-- strings regarding to fragment_settings_main.xml - END -->
+
+    <!-- strings regarding to fragment_settings_frag1.xml - START -->
+    <string name="preferred_currency_title">Preferovaná měna</string>
+    <string name="preferred_alert_refresh_title">Frekvence kontroly upozornění</string>
+    <!-- strings regarding to fragment_settings_frag1.xml - END -->
+
+    <!-- strings regarding to fragment_settings_frag2.xml - START -->
+    <string name="preferred_wallet_title">Preference peněženky</string>
+    <string name="preferred_wallet_bitcoin">Bitcoin: </string>
+    <string name="preferred_wallet_litecoin">Litecoin: </string>
+    <!-- strings regarding to fragment_settings_frag2.xml - END -->
+
+    <!-- strings regarding to transaction_item_lv.xml & PerformedTransactionAdapter class - START -->
+    <string name="transaction_item_amount">počet:</string>
+    <string name="transaction_item_price">za kus:</string>
+    <string name="transaction_item_buy">nákup</string>
+    <string name="transaction_item_sell">prodej</string>
+    <string name="performed_transaction_removed_alert">Transakce byla odstraněna.</string>
+    <!-- strings regarding to transaction_item_lv.xml & PerformedTransactionAdapter class - END -->
+
+    <!-- strings regarding to wallet_crypto_fragment.xml & FragmentWalletCrypto class - START -->
+    <string name="wallet_address_crypto">Adresa: </string>
+    <string name="wallet_address_hint_crypto">adresa peněženky</string>
+    <string name="wallet_type_crypto">Kryptoměna: </string>
+    <string name="wallet_type_prompt_crypto">Vyberte kryptoměnu</string>
+    <string name="wallet_check_btn_crypto">Zkontroluj!</string>
+    <string name="wallet_from_list_btn">Ze seznamu</string>
+
+    <string name="wallet_info_title_crypto">Získané informace</string>
+    <string name="wallet_info_address_crypto">Adresa: </string>
+    <string name="wallet_info_actual_amount_crypto">Aktuální stav: </string>
+    <string name="wallet_info_transaction_count_crypto">Počet transakcí: </string>
+    <string name="wallet_info_total_received_crypto">Celkem přijato: </string>
+    <string name="wallet_info_total_sent_crypto">Celkem odesláno: </string>
+    <string name="wallet_info_more_crypto">Více informací: </string>
+    <string name="wallet_info_add_wallet_crypto">Uložit adresu peněženky</string>
+
+    <string name="wallet_name_title_dialog">Název peněženky</string>
+    <string name="wallet_name_message_dialog">Zvolte si název, pod kterým bude daná peněženka uložena.</string>
+    <string name="wallet_name_positive_btn">Uložit</string>
+    <string name="wallet_name_negative_btn">Zrušit</string>
+    <string name="wallet_name_short_alert">Název je přílíš krátký, zkuste to znovu!</string>
+    <string name="wallet_success_saved_begin">Peněženka byla uložena pod názvem \"</string>
+    <string name="wallet_success_saved_end">\".</string>
+    <string name="wallet_not_saved">Peněženka nebyla uložena.</string>
+    <string name="wallet_already_saved_name_begin">Daná peněženka je již uložena pod názvem \"</string>
+    <string name="wallet_already_saved_name_end">\".</string>
+
+    <string name="wallet_list_display_type_start">Zobrazeny peněženky typu: \"</string>
+    <string name="wallet_list_nothing_to_display_type_start">Prozatím nemáte uloženy žádné peněženky typu: \"</string>
+    <string name="wallet_list_display_type_end">\".</string>
+
+
+    <string name="wallet_list_selected_display_start">Získávání informací pro peněženku: \"</string>
+    <string name="wallet_list_selected_display_end">\".</string>
+
+    <string-array name="wallet_crypto_support_list">
+        <item>Bitcoin (BTC)</item>
+        <item>Litecoin (LTC)</item>
+    </string-array>
+    <!-- strings regarding to wallet_crypto_fragment.xml & FragmentWalletCrypto class - END -->
+
+    <!-- strings regarding to settings_fragment.xml & FragmentSettings class & SettingsAdapter class - START -->
+    <string name="settings_sharedpref_tab">selected_tab_num</string>
+    <string name="settings_sharedpref_currency_pref">general_currency_pref_num</string>
+    <string name="settings_sharedpref_crypto_actual_pref">crypto_actual_pref_num</string>
+    <string name="settings_sharedpref_crypto_news_pref">crypto_news_pref_num</string>
+    <string name="settings_sharedpref_crypto_wallet_btc_pref">crypto_wallet_btc_pref_num</string>
+    <string name="settings_sharedpref_crypto_wallet_ltc_pref">crypto_wallet_ltc_pref_num</string>
+    <string name="settings_sharedpref_stocks_news_pref">stocks_news_pref_num</string>
+    <string name="settings_pref_cur_selected">Preferovaná měna úspěšně změněna.</string>
+    <string name="settings_crypto_pref_news_selected">Preferovaný zdroj kryptoměnových zpráv úspěšně změněn.</string>
+    <string name="settings_crypto_pref_btc_selected">Preferovaný zdroj dat Bitcoin peněženky úspěšně změněn.</string>
+    <string name="settings_crypto_pref_ltc_selected">Preferovaný zdroj dat Litecoin peněženky úspěšně změněn.</string>
+    <string name="settings_stocks_pref_news_selected">Preferovaný zdroj akciových zpráv úspěšně změněn.</string>
+
+    <string name="settings_category_prompt">Vyberte kategorii</string>
+    <string-array name="settings_category_list">
+        <item>Obecne</item>
+        <item>Kryptomeny</item>
+        <item>Akcie</item>
+    </string-array>
+
+    <string-array name="settings_crypto_wallet_btc_pref_list">
+        <item>BitPay.com</item>
+        <item>BlockCypher.com</item>
+        <item>BTC.com</item>
+    </string-array>
+
+    <string-array name="settings_crypto_wallet_ltc_pref_list">
+        <item>BlockCypher.com</item>
+        <item>BTC.com</item>
+    </string-array>
+    <string-array name="settings_crypto_news_pref_list">
+        <item>CryptoSvet.cz</item>
+        <item>FXStreet.cz</item>
+        <item>Kryptonovinky.com</item>
+        <item>CoinMagazin.cz</item>
+        <item>KRYPTOMAGAZIN.cz</item>
+        <item>CCN.com</item>
+        <item>NullTX.com</item>
+        <item>CryptoSlate.com</item>
+        <item>Coinspeaker.com</item>
+        <item>TheMerkle.com</item>
+    </string-array>
+    <string-array name="settings_stocks_news_pref_list">
+        <item>Akcie.cz</item>
+        <item>W4T.cz</item>
+        <item>Aktualne.cz</item>
+        <item>iROZHLAS.cz</item>
+        <item>Fool.com</item>
+        <item>Investing.com</item>
+        <item>CNBCTV18.com</item>
+        <item>BusinessInsider.com</item>
+    </string-array>
+    <string-array name="settings_general_currency_pref_list">
+        <item>CZK</item>
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+    <!-- strings regarding to settings_fragment.xml & FragmentSettings class & SettingsAdapter class - END -->
+
+
+    <!-- strings regarding to dialog_history_crypto_detail_frag.xml & history_crypto_fragment.xml & FragmentHistoryCrypto class - START -->
+    <string name="history_crypto_dialog_chart_title">Podíl kryptoměn</string>
+    <string name="history_stocks_dialog_chart_title">Podíl akcií</string>
+    <string name="history_crypto_dialog_chart_dismiss">OK</string>
+    <string name="history_crypto_dialog_name_tv">název: </string>
+    <string name="history_crypto_dialog_symbol_tv">symbol: </string>
+    <string name="history_crypto_dialog_count_tv">celkový počet: </string>
+    <string name="history_crypto_dialog_invested_tv">celkově investováno: </string>
+    <string name="history_crypto_display_toast">Pro zobrazení informací klepněte na položku v grafu.</string>
+
+    <string name="history_crypto_nothing_to_display">Prozatím nemáte definovány žádné vlastněné kryptoměny.</string>
+    <string name="history_crypto_alert_title">Upozornění</string>
+    <string name="history_crypto_alert_no_data_mes">Prozatím nebyly definovány žádné vlastněné kryptoměny. Graf nelze vytvořit!</string>
+    <string name="history_crypto_alert_no_data_ok">OK</string>
+    <string name="history_crypto_alert_no_over_mes">Vlastníte nulový či záporný počet kusů kryptoměny. Graf nelze vytvořit!\nZáporného stavu lze dosáhnout například prodejem kryptoměn, jejichž nákup nebyl definován.</string>
+    <!-- strings regarding to dialog_history_crypto_detail_frag.xml & history_crypto_fragment.xml & FragmentHistoryCrypto class - END -->
+
+    <!-- strings regarding to FragmentHistoryStocks class - START -->
+    <string name="history_stocks_nothing_to_display">Prozatím nemáte definovány žádné vlastněné akcie.</string>
+    <string name="history_stocks_alert_title">Upozornění</string>
+    <string name="history_stocks_alert_no_data_mes">Prozatím nebyly definovány žádné vlastněné akcie. Graf nelze vytvořit!</string>
+    <string name="history_stocks_alert_no_over_mes">Vlastníte nulový či záporný počet kusů akcií. Graf nelze vytvořit!\nZáporného stavu lze dosáhnout například prodejem akcií, jejichž nákup nebyl definován.</string>
+    <string name="history_stocks_alert_no_data_ok">OK</string>>
+    <!-- strings regarding to FragmentHistoryStocks class - END -->
+
+    <!-- strings regarding to saved_wallet_item_lv.xml & SavedWalletAdapter class - START -->
+    <string name="saved_wallet_remove_btn">odebrat</string>
+    <string name="saved_wallet_dialog_title">Opravdu odstranit?</string>
+    <string name="saved_wallet_dialog_message_main">Opravdu chcete odstranit peněženku s následujícími údaji?</string>
+    <string name="saved_wallet_dialog_message_name">název: </string>
+    <string name="saved_wallet_dialog_message_address">adresa: </string>
+    <string name="saved_wallet_dialog_message_type">typ: </string>
+    <string name="saved_wallet_dialog_message_datetime">čas uložení: </string>
+    <string name="saved_wallet_dialog_yes">ano</string>
+    <string name="saved_wallet_dialog_no">ne</string>
+    <string name="saved_wallet_removed_start">Peněženka s názvem \"</string>
+    <string name="saved_wallet_removed_end">\" byla odstraněna.</string>
+    <string name="saved_wallet_not_removed_start">Peněženka s názvem \"</string>
+    <string name="saved_wallet_not_removed_end">\" nebyla odstraněna.</string>
+    <!-- strings regarding to saved_wallet_item_lv.xml & SavedWalletAdapter class - END -->
+
+    <!-- strings regarding to created_alert_lv.xml & StocksAlertsAdapter class - START -->
+    <string name="created_alert_below">pod</string>
+    <string name="created_alert_above">nad</string>
+    <string name="created_alert_dialog_title">Opravdu odstranit?</string>
+    <string name="created_alert_dialog_stock_message">Opravdu chcete odstranit upozornění související s následující akcií?</string>
+    <string name="created_alert_dialog_crypto_message">Opravdu chcete odstranit upozornění související s následující kryptoměnou?</string>
+    <string name="created_alert_dialog_stock_message_symbol">symbol: </string>
+    <string name="created_alert_dialog_crypto_message_name">název: </string>
+    <string name="created_alert_dialog_stock_yes">ano</string>
+    <string name="created_alert_dialog_stock_no">ne</string>
+    <string name="created_alert_dialog_stock_removed_start">Upozornění asociované s akciemi \"</string>
+    <string name="created_alert_dialog_crypto_removed_start">Upozornění asociované s kryptoměnou \"</string>
+    <string name="created_alert_dialog_stock_removed_end">\" bylo odstraněno.</string>
+    <string name="created_alert_dialog_stock_not_removed_start">Upozornění asociované s akciemi \"</string>
+    <string name="created_alert_dialog_crypto_not_removed_start">Upozornění asociované s kryptoměnou \"</string>
+    <string name="created_alert_dialog_stock_not_removed_end">\" nebylo odstraněno.</string>
+    <!-- strings regarding to created_alert_lv.xml & StocksAlertsAdapter class - END -->
+
+    <!-- strings regarding to owned_item_lv.xml & OwnedItemAdapter class - START -->
+    <string name="owned_item_remove_btn">odebrat</string>
+    <string name="owned_item_pieces">celkem</string>
+    <string name="owned_item_dialog_title">Opravdu odstranit?</string>
+    <string name="owned_item_dialog_message_main">Opravdu chcete odstranit údaje o veškerých provedených transakcích asociovaných s následující kryptoměnou?</string>
+    <string name="owned_item_dialog_message_stock_main">Opravdu chcete odstranit údaje o veškerých provedených transakcích asociovaných s následující akcií?</string>
+    <string name="owned_item_dialog_message_name">název: </string>
+    <string name="owned_item_dialog_message_symbol">symbol: </string>
+    <string name="owned_item_dialog_yes">ano</string>
+    <string name="owned_item_dialog_no">ne</string>
+    <string name="owned_item_removed_start">Veškeré transakce asociované s kryptoměnou \"</string>
+    <string name="owned_item_removed_stock_start">Veškeré transakce asociované s akciemi \"</string>
+    <string name="owned_item_removed_end">\" byly odstraněny.</string>
+    <string name="owned_item_not_removed_start">Transakce asociované s kryptoměnou \"</string>
+    <string name="owned_item_not_removed_stock_start">Transakce asociované s akciemi \"</string>
+    <string name="owned_item_not_removed_end">\" nebyly odstraněny.</string>
+    <!-- strings regarding to owned_item_lv.xml & OwnedItemAdapter class - END -->
+
+    <!-- string regarding to dialog_alert_actual_value_crypto_detail_frag.xml - START -->
+    <string name="dialog_alert_actual_value_crypto_below_radio">pod</string>
+    <string name="dialog_alert_actual_value_crypto_above_radio">nad</string>
+    <string name="dialog_alert_actual_value_crypto_price_tv">částka: </string>
+    <string name="dialog_alert_actual_value_crypto_price_et_hint">zadejte pož. částku</string>
+    <string name="dialog_alert_actual_value_crypto_err_title">Upozornění</string>
+    <string name="dialog_alert_actual_value_crypto_err_radio_message">Specifikujte prosím, zda chcete být upozornění když cena klesne pod danou mez či pokud se cena dostane nad uvedenou mez.</string>
+    <string name="dialog_alert_actual_value_crypto_err_amount_message">Zadejte prosím validní cílovou částku.</string>
+    <string name="dialog_alert_actual_value_crypto_err_dismiss">OK</string>
+    <!-- string regarding to dialog_alert_actual_value_crypto_detail_frag.xml - END -->
+
+    <!-- string regarding to dialog_history_crypto_detail_frag.xml & HistoryCryptoDetailFrag & HistoryStocksDetailFrag class - START -->
+    <string name="history_crypto_detail_nothing_to_display">Prozatím nemáte uloženy žádné transakce související s danou kryptoměnou.</string>
+    <string name="history_crypto_dialog_type_buy_radio">nákup</string>
+    <string name="history_crypto_dialog_type_sell_radio">prodej</string>
+    <string name="history_crypto_dialog_amount_tv">celkový počet: </string>
+    <string name="history_crypto_dialog_amount_hint">celkový počet</string>
+    <string name="history_crypto_dialog_price_tv">cena za jednotku: </string>
+    <string name="history_crypto_dialog_price_hint">cena za kus</string>
+    <string name="history_crypto_dialog_date_tv">datum: </string>
+    <string name="history_crypto_dialog_date_hint">zvolte datum</string>
+    <string name="history_crypto_dialog_time_tv">čas: </string>
+    <string name="history_crypto_dialog_time_hint">zvolte čas</string>
+    <string name="history_crypto_dialog_message">Níže vyplňte údaje související s provedenou transakcí.</string>
+    <string name="history_crypto_simulation_dialog_message">Níže vyplňte údaje související se simulovanou transakcí.</string>
+    <string name="history_crypto_dialog_title">Přidání transakce</string>
+    <string name="history_crypto_simulation_dialog_title">Simulování transakce</string>
+    <string name="history_crypto_dialog_cancel">zrušit</string>
+    <string name="history_crypto_dialog_add">přidat</string>
+    <string name="history_crypto_simulation_dialog_simulate">provést simulaci</string>
+    <string name="history_crypto_detail_saved">Transakce byla uložena.</string>
+    <string name="history_crypto_detail_not_saved">Transakce nebyla uložena.</string>
+    <string name="history_crypto_detail_not_simulated">Simulace nebyla provedena.</string>
+    <string name="history_crypto_detail_err_type_title">Upozornění</string>
+    <string name="history_crypto_detail_err_type_message">Vyberte prosím typ transakce (nákup či prodej)!</string>
+    <string name="history_crypto_detail_err_no_point_message">Pro zahájení simulace nejprve vyberte bod z grafu!</string>
+    <string name="history_crypto_detail_err_dismiss">OK</string>
+    <string name="history_crypto_detail_err_title">Upozornění</string>
+    <string name="history_crypto_detail_err_amount_message">Zadejte prosím validní celkový počet!</string>
+    <string name="history_crypto_detail_err_price_message">Zadejte prosím validní cenu jednoho kusu kryptoměny!</string>
+    <string name="history_stocks_detail_err_price_message">Zadejte prosím validní cenu jednoho kusu dané akcie!</string>
+    <string name="history_crypto_detail_err_date_message">Vyplňte prosím datum transakce!</string>
+    <string name="history_crypto_detail_err_date_exceed_message">Datum transakce nemůže nastat po aktuálním datu!</string>
+    <string name="history_crypto_detail_err_time_message">Vyplňte prosím čas transakce!</string>
+    <string name="history_crypto_detail_err_time_exceed_message">Čas transakce nesmí překročit aktuální čas (v případě, že transakce nastala dnes)!</string>
+    <!-- string regarding to dialog_history_crypto_detail_frag.xml & HistoryCryptoDetailFrag class & HistoryStocksDetailFrag - END -->
+
+    <!-- string regarding to FragmentAlertsCrypto class - START -->
+    <string name="alerts_crypto_no_saved_toast">Nemáte uložena žádná upozornění související s kryptoměnami. Pro přidání přejděte na kartu Aktuální stav a klepněte na ikonu budíku.</string>
+    <string name="alerts_crypto_mes1">Cena kryptoměny</string>
+    <string name="alerts_crypto_down_mes2">klesla pod vámi požadovanou částku:</string>
+    <string name="alerts_crypto_up_mes2">se zvýšila nad vámi požadovanou částku:</string>
+    <string name="alerts_crypto_mes3">.</string>
+    <string name="alerts_crypto_mes4">\nHodnota dané kryptoměny je nyní: </string>
+    <!-- string regarding to FragmentAlertsCrypto class - END -->
+
+    <!-- string regarding to FragmentAlertsStocks class - START -->
+    <string name="alerts_stocks_no_saved_toast">Nemáte uložena žádná upozornění související s akciemi. Pro přidání přejděte na kartu Aktuální stav a klepněte na ikonu budíku.</string>
+    <string name="alerts_stocks_mes1">Cena jedné akcie firmy</string>
+    <string name="alerts_stocks_down_mes2">klesla pod vámi požadovanou částku:</string>
+    <string name="alerts_stocks_up_mes2">se zvýšila nad vámi požadovanou částku:</string>
+    <string name="alerts_stocks_mes3">.</string>
+    <string name="alerts_stocks_mes4">\nHodnota jedné akcie dané firmy je nyní: </string>
+    <!-- string regarding to FragmentAlertsStocks class - END -->
+
+    <!-- string regarding to FragmentActualValueStocks class & ActualValueStocksDetailFrag class & ActualValueStocksDetailFragMain class & HistoryStocksDetailFrag class & StocksDetailAdapter class - START -->
+    <string name="actual_value_stocks_detail_dialog_alert_title">Přidat upozornění</string>
+    <string name="actual_value_stocks_detail_dialog_alert_message">Níže vyplňte údaje související s upozorněním na změnu ceny jednoho kusu akcie dané firmy. Můžete být upozorněni, když hodnota kusu akcie klesne pod určitou částku, či pokud se navýší nad určitou částku.</string>
+    <string name="actual_value_stocks_detail_dialog_alert_add">Přidat upozornění</string>
+    <string name="actual_value_stocks_detail_dialog_alert_cancel">Zrušit</string>
+    <string name="actual_value_stocks_detail_dialog_alert_not_added">Upozornění na změnu ceny nebylo přidáno.</string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_title">Informace</string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_dismiss">OK</string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_1">K datu</string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_2"> by byl v čase </string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_3"> učiněn nákup za </string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_4">.</string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_5">Poslední známá cena jedné akcie dané firmy pochází ze dne </string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_6">, čas </string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_7"> a činí </string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_8">V tento časový okamžik by akcie byly zakoupeny za celkovou částku </string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_9_gain">Nákup ve zvoleném časovém bodě by byl výdělečný a bylo by dosaženo zisku </string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_9_loss">Nákup ve zvoleném časovém bodě by byl prodělečný a v aktuální době by bylo možno daný počet akcií nakoupit o </string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_10_gain">.</string>
+    <string name="actual_value_stocks_detail_dialog_sim_buy_10_loss"> levněji.</string>
+
+    <string name="actual_value_stocks_detail_dialog_sim_sell_1">K datu</string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_2"> by byl v čase </string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_3"> učiněn prodej za </string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_4">.</string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_5">Poslední známá cena jedné akcie dané firmy pochází ze dne </string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_6">, čas </string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_7"> a činí </string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_8">V tento časový okamžik by akcie dané firmy byly prodány za celkovou částku </string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_9_gain">Prodej ve zvoleném časovém bodě by byl výdělečný a bylo by dosaženo zisku </string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_9_loss">Prodej ve zvoleném časovém bodě by byl prodělečný a v aktuální době by bylo možno daný počet akcií prodat o </string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_10_gain">.</string>
+    <string name="actual_value_stocks_detail_dialog_sim_sell_10_loss"> dráž.</string>
+
+    <string name="actual_value_stocks_detail_wrong_item">Zvolena neplatná položka. Zvolte prosím akcii z vyhledávání!</string>
+    <string name="actual_value_stocks_detail_not_exist">Akcie s daným symbolem neexistuje!</string>
+    <string name="actual_value_stocks_detail_nothing_to_display">Prozatím nemáte uloženy žádné transakce související s akciemi dané firmy.</string>
+
+    <string name="actual_value_stocks_detail_sharedpref_tab">selected_tab_num</string>
+    <string name="actual_value_stocks_detail_sharedpref_symbol">selected_stock_sym</string>
+
+    <string name="actual_value_stocks_fill_title">Upozornění</string>
+    <string name="actual_value_stocks_fill_mes">Nejprve prosím zadejte symbol akcie!</string>
+    <string name="actual_value_stocks_data_mes">Informace pro uvedená data nelze získat. Je možné, že poskytovatel neeviduje informace pro uvedená data.</string>
+    <string name="actual_value_stocks_fill_ok">OK</string>
+    <!-- string regarding to FragmentActualValueStocks class & ActualValueStocksDetailFrag class & ActualValueStocksDetailFragMain class & HistoryStocksDetailFrag class & StocksDetailAdapter class - END -->
+
+    <!-- string regarding to FragmentConverterCrypto class - START -->
+    <string name="converter_crypto_alert_title">Upozornění</string>
+    <string name="converter_crypto_alert_amount_not_pres_mes">Není zvolena částka, jež má být převedena!</string>
+    <string name="converter_crypto_alert_crypto_from_not_pres_mes">Není zvolena kryptoměna, ze které má být částka převedena!</string>
+    <string name="converter_crypto_alert_crypto_to_not_pres_mes">Není zvolena kryptoměna, na kterou má být částka převedena!</string>
+    <string name="converter_crypto_alert_crypto_from_toast">Zvolte kryptoměnu, ze které má být částka převedena</string>
+    <string name="converter_crypto_alert_crypto_to_toast">Zvolte kryptoměnu, na kterou má být částka převedena</string>
+    <string name="converter_crypto_alert_crypto_first_sel_toast">Nejprve zvolte pole \"z\" nebo \"na\"</string>
+    <string name="converter_crypto_alert_ok">OK</string>
+    <!-- string regarding to FragmentConverterCrypto class - END -->
+
+    <!-- string regarding to FragmentWalletCrypto class - START -->
+    <string name="wallet_crypto_sharedpref_name">tapped_wallet_name</string>
+    <string name="wallet_crypto_sharedpref_type">tapped_wallet_type</string>
+    <string name="wallet_crypto_sharedpref_address">tapped_wallet_address</string>
+    <string name="wallet_crypto_sharedpref_demo_btc_name">Demo Bitcoin 1</string>
+    <string name="wallet_crypto_sharedpref_demo_btc_name2">Demo Bitcoin 2</string>
+    <string name="wallet_crypto_sharedpref_demo_btc_type">Bitcoin (BTC)</string>
+    <string name="wallet_crypto_sharedpref_demo_btc_address">3E5B5QbDjUL471PEed9vZDwCSck9btBLkD</string>
+    <string name="wallet_crypto_sharedpref_demo_btc_address2">13jh1fCa6pCFTcCH1H6MXDWLa9zajtniMT</string>
+    <string name="wallet_crypto_sharedpref_demo_ltc_name">Demo Litecoin 1</string>
+    <string name="wallet_crypto_sharedpref_demo_ltc_name2">Demo Litecoin 2</string>
+    <string name="wallet_crypto_sharedpref_demo_ltc_type">Litecoin (LTC)</string>
+    <string name="wallet_crypto_sharedpref_demo_ltc_address">M82EzrQ8S5pK6bZbYSmjGwzsJiSemrF3uH</string>
+    <string name="wallet_crypto_sharedpref_demo_ltc_address2">M8T1B2Z97gVdvmfkQcAtYbEepune1tzGua</string>
+
+    <string name="wallet_crypto_alert_title">Upozornění</string>
+    <string name="wallet_crypto_alert_address_not_pres_mes">Nejprve prosím zadejte adresu peněženky či zvolte peněženku ze seznamu!</string>
+    <string name="wallet_crypto_alert_ok">OK</string>
+    <!-- string regarding to FragmentWalletCrypto class - END -->
+
+    <!-- string regarding to FragmentWalletCrypto class & FragmentWalletListCrypto class - START -->
+    <string name="wallet_crypto_list_title">Uložené peněženky</string>
+    <string name="wallet_crypto_sharedpref_selected_type">selected_wallet_type</string>
+    <string name="wallet_crypto_sharedpref_tap_name">tapped_wallet_name</string>
+    <string name="wallet_crypto_sharedpref_tap_type">tapped_wallet_type</string>
+    <string name="wallet_crypto_sharedpref_tap_address">tapped_wallet_address</string>
+    <!-- string regarding to FragmentWalletCrypto class & FragmentWalletListCrypto class - END -->
+
+    <!-- string regarding to LogicActualValueCryptoDetail class & LogicActualValueStocksDetail class & LogicConverterCrypto class & LogicCryptoList class & LogicNewsCrypto class & LogicNewsStocks class & LogicWalletCrypto class - START -->
+    <string name="logic_retrieving">Získávám data, prosím čekejte...</string>
+    <string name="logic_wallet_crypto_not_exist">Zvolená peněženka neexistuje nebo nejste připojeni k internetu!</string>
+    <string name="logic_wallet_crypto_too_much_requests">Server nestíhá odbavit požadavky! Opakujte pokus za moment!</string>
+    <!-- string regarding to LogicActualValueCryptoDetail class & LogicActualValueStocksDetail class & LogicConverterCrypto class & LogicCryptoList class & LogicNewsCrypto class & LogicNewsStocks class & LogicWalletCrypto class - END -->
+</resources>

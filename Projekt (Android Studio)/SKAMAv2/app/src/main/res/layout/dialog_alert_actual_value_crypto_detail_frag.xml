@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialog_alert_actual_value_range_lay_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true" >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/dialog_alert_actual_value_range_below_rb_id"
+                android:textAppearance="@style/DescBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_alert_actual_value_crypto_below_radio" />
+
+            <RadioButton
+                android:id="@+id/dialog_alert_actual_value_range_above_rb_id"
+                android:textAppearance="@style/DescBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_alert_actual_value_crypto_above_radio" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_alert_actual_value_price_lay_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dialog_alert_actual_value_range_lay_id">
+
+        <TextView
+            android:id="@+id/dialog_alert_actual_value_price_tv_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/dialog_alert_actual_value_crypto_price_tv" />
+
+        <EditText
+            android:id="@+id/dialog_alert_actual_value_price_et_id"
+            android:maxLength="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="10"
+            android:inputType="numberDecimal"
+            android:hint="@string/dialog_alert_actual_value_crypto_price_et_hint" />
+
+        <TextView
+            android:id="@+id/dialog_alert_actual_value_price_tv2_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxEms="10"
+            android:text="XXX" />
+    </LinearLayout>
+</RelativeLayout>

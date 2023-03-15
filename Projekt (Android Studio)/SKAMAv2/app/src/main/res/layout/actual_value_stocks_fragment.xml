@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+    <LinearLayout
+        android:id="@+id/actual_value_stocks_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/actual_value_stocks_search_sv_id"
+            android:layout_centerInParent="true"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="zadejte symbol akcie"/>
+
+        <Button
+            android:id="@+id/actual_value_stocks_search_btn_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/search_display_btn_stocks" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/actual_value_stocks_info_tv_id"
+        android:textAppearance="@style/HeadlineEditSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/actual_value_stocks_layout_id"
+        android:text="@string/search_manual_title_stocks" />
+
+    <TextView
+        android:id="@+id/actual_value_stocks_info2_tv_id"
+        android:textAppearance="@style/DescBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/actual_value_stocks_info_tv_id"
+        android:layout_alignParentLeft="true"
+        android:text="@string/search_manual_first_part_stocks" />
+
+    <Button
+        android:id="@+id/actual_value_stocks_select_from_website_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actual_value_stocks_info2_tv_id"
+        android:text="@string/search_pick_website_stocks" />
+
+    <ListView
+        android:id="@+id/actual_value_stocks_lv_id"
+        android:layout_below="@+id/actual_value_stocks_select_from_website_btn_id"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+</RelativeLayout>

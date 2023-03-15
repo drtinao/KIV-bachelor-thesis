@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:id="@+id/stocks_detail_frag1_act_val_title_id"
+        android:textAppearance="@style/HeadlineEditSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/basic_info_title_stocks" />
+
+    <LinearLayout
+        android:id="@+id/stocks_detail_frag1_act_val_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/stocks_detail_frag1_act_val_title_id">
+
+        <TextView
+            android:id="@+id/stocks_detail_frag1_act_val_tv1_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/actual_value_stocks" />
+
+        <TextView
+            android:id="@+id/stocks_detail_frag1_act_val_tv2_id"
+            android:textAppearance="@style/DescBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/stocks_detail_frag1_act_val_add_btn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stocks_detail_frag1_act_val_layout_id"
+        android:text="@string/add_btn_stock" />
+
+    <View
+        android:id="@+id/stocks_detail_frag1_divider_id"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/stocks_detail_frag1_act_val_add_btn_id"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/stocks_detail_frag1_chart_title_id"
+        android:textAppearance="@style/HeadlineEditSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/stocks_detail_frag1_divider_id"
+        android:text="@string/time_progression_stocks" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/stocks_detail_frag1_chart_id"
+        android:layout_below="@id/stocks_detail_frag1_chart_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

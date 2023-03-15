@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- this file contains names of modules inside the app and is used as a core for navigation panel (slide from left side of the screen to make it visible) -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!-- menu items regarding to crypto - START -->
+        <item android:title="@string/crypto_menu">
+            <menu>
+                <item
+                    android:id="@+id/actual_value_crypto_id"
+                    android:icon="@drawable/ic_actual_value_nav"
+                    android:title="@string/actual_value_crypto_menu" />
+
+                <item
+                    android:id="@+id/news_crypto_id"
+                    android:icon="@drawable/ic_news_nav"
+                    android:title="@string/news_crypto_menu" />
+
+                <item
+                    android:id="@+id/history_crypto_id"
+                    android:icon="@drawable/ic_history_nav"
+                    android:title="@string/history_crypto_menu" />
+
+                <item
+                    android:id="@+id/alert_crypto_id"
+                    android:icon="@drawable/ic_alarm_nav"
+                    android:title="@string/alert_crypto_menu" />
+
+                <item
+                    android:id="@+id/wallet_crypto_id"
+                    android:icon="@drawable/ic_wallet_nav"
+                    android:title="@string/wallet_crypto_menu" />
+
+                <item
+                    android:id="@+id/converter_crypto_id"
+                    android:icon="@drawable/ic_converter_nav"
+                    android:title="@string/converter_crypto_menu" />
+            </menu>
+        </item>
+        <!-- menu items regarding to crypto - END -->
+
+        <!-- menu items regarding to stocks - START -->
+        <item android:title="@string/stocks_menu">
+            <menu>
+                <item
+                    android:id="@+id/actual_value_stocks_id"
+                    android:icon="@drawable/ic_actual_value_nav"
+                    android:title="@string/actual_value_stocks_menu" />
+
+                <item
+                    android:id="@+id/news_stocks_id"
+                    android:icon="@drawable/ic_news_nav"
+                    android:title="@string/news_stocks_menu" />
+
+                <item
+                    android:id="@+id/history_stocks_id"
+                    android:icon="@drawable/ic_history_nav"
+                    android:title="@string/history_stocks_menu" />
+
+                <item
+                    android:id="@+id/alert_stocks_id"
+                    android:icon="@drawable/ic_alarm_nav"
+                    android:title="@string/alert_crypto_menu" />
+            </menu>
+        </item>
+        <!-- menu items regarding to stocks - END -->
+
+        <!-- menu items regarding to other options - START -->
+        <item android:title="@string/other_menu">
+            <menu>
+                <item
+                    android:id="@+id/settings_id"
+                    android:icon="@drawable/ic_settings_nav"
+                    android:title="@string/other_settings_menu" />
+
+                <item
+                    android:id="@+id/about_id"
+                    android:icon="@drawable/ic_info_24px"
+                    android:title="@string/other_about_menu" />
+            </menu>
+        </item>
+        <!-- menu items regarding to other options - END -->
+    </group>
+</menu>
